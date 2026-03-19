@@ -1,0 +1,117 @@
+<!-- Página de exemplo para testes de componentes -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Componentes | SyntaxWear</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container" style="padding: 40px 0;">
+        <h1>Testes de Componentes</h1>
+
+        <!-- Notificações -->
+        <section>
+            <h2>Notificações</h2>
+            <div class="notification success">✓ Sucesso! Operação realizada com sucesso.</div>
+            <div class="notification error">✗ Erro! Algo deu errado.</div>
+            <div class="notification warning">⚠ Aviso! Verifique antes de continuar.</div>
+            <div class="notification info">ℹ Informação! Saiba mais sobre o produto.</div>
+        </section>
+
+        <!-- Badges -->
+        <section>
+            <h2>Badges</h2>
+            <span class="badge primary">Novo</span>
+            <span class="badge secondary">Em Estoque</span>
+            <span class="badge success">Promoção</span>
+        </section>
+
+        <!-- Botões -->
+        <section>
+            <h2>Botões</h2>
+            <button class="btn btn-primary">Botão Primário</button>
+            <button class="btn" style="background-color: #666; color: white;">Botão Secundário</button>
+        </section>
+
+        <!-- Loading Spinner -->
+        <section>
+            <h2>Loading Spinner</h2>
+            <div class="spinner"></div>
+        </section>
+
+        <!-- Formulário -->
+        <section>
+            <h2>Formulário de Exemplo</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Digite seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" placeholder="Digite sua mensagem" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Tabela -->
+        <section>
+            <h2>Tabela de Exemplo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camiseta Code</td>
+                        <td>R$ 49.90</td>
+                        <td>2</td>
+                        <td>R$ 99.80</td>
+                    </tr>
+                    <tr>
+                        <td>Boné Hacker</td>
+                        <td>R$ 29.90</td>
+                        <td>1</td>
+                        <td>R$ 29.90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <style>
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        section button,
+        section .badge {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html>

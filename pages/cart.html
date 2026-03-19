@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="SyntaxWear - Loja de roupas e acessórios para desenvolvedores e amantes da tecnologia.">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>SyntaxWear | E-commerce de Tecnologia</title>
+    <title>Carrinho de Compras | SyntaxWear</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <!-- Header -->
@@ -18,15 +16,15 @@
             
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#products" class="nav-link">Produtos</a></li>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../index.html#products" class="nav-link">Produtos</a></li>
                     <li><a href="#" class="nav-link">Sobre</a></li>
                     <li><a href="#" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
             
             <div class="cart-icon">
-                <a href="#" class="cart-link">
+                <a href="./cart.html" class="cart-link">
                     🛒 <span class="cart-count">0</span>
                 </a>
             </div>
@@ -35,22 +33,17 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Banner Hero -->
-        <section class="hero-banner">
-            <div class="hero-content">
-                <h2>Bem-vindo à SyntaxWear</h2>
-                <p>Roupas e acessórios para desenvolvedores e amantes da tecnologia</p>
-                <button class="btn btn-primary">Explorar Produtos</button>
+        <section class="container">
+            <h2>Carrinho de Compras</h2>
+            
+            <div id="cart-container">
+                <p>Seu carrinho está vazio. <a href="../index.html">Continuar comprando</a></p>
             </div>
-        </section>
-
-        <!-- Products Section -->
-        <section id="products" class="products-section">
-            <div class="container">
-                <h2>Produtos em Destaque</h2>
-                <div id="products-container" class="products-grid">
-                    <!-- Produtos carregados dinamicamente -->
-                </div>
+            
+            <div id="cart-summary" style="display: none;">
+                <h3>Resumo do Pedido</h3>
+                <p>Total: R$ <span id="cart-total">0.00</span></p>
+                <button class="btn btn-primary">Ir para o Checkout</button>
             </div>
         </section>
     </main>
@@ -97,9 +90,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="./js/products.js"></script>
-    <script src="./js/cart.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>

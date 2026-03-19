@@ -1,0 +1,19 @@
+{
+  "name": "syntaxwear-ecommerce",
+  "version": "1.0.0",
+  "description": "E-commerce de roupas e acessórios para desenvolvedores e amantes da tecnologia",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Build script here'",
+    "test": "echo 'Test script here'"
+  },
+  "keywords": [
+    "ecommerce",
+    "roupas",
+    "tecnologia",
+    "desenvolvedores"
+  ],
+  "author": "",
+  "license": "MIT"
+}

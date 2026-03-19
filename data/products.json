@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Camiseta Code",
+    "description": "Camiseta confortável com estampa de código",
+    "price": 49.90,
+    "image": "./assets/images/camiseta-code.jpg",
+    "category": "camisetas"
+  },
+  {
+    "id": 2,
+    "name": "Boné Hacker",
+    "description": "Boné preto com logo de hacker respeituoso",
+    "price": 29.90,
+    "image": "./assets/images/bone-hacker.jpg",
+    "category": "acessorios"
+  },
+  {
+    "id": 3,
+    "name": "Meia Dev",
+    "description": "Meia com padrão de código",
+    "price": 19.90,
+    "image": "./assets/images/meia-dev.jpg",
+    "category": "meias"
+  },
+  {
+    "id": 4,
+    "name": "Moletom GitHub",
+    "description": "Moletom com logo GitHub bordado",
+    "price": 89.90,
+    "image": "./assets/images/moletom-github.jpg",
+    "category": "moletom"
+  },
+  {
+    "id": 5,
+    "name": "Caneca Dev",
+    "description": "Caneca térmica para sua bebida favorita",
+    "price": 34.90,
+    "image": "./assets/images/caneca-dev.jpg",
+    "category": "acessorios"
+  },
+  {
+    "id": 6,
+    "name": "Teclado Sticker Pack",
+    "description": "Pack com 50 stickers de programação",
+    "price": 24.90,
+    "image": "./assets/images/stickers.jpg",
+    "category": "acessorios"
+  }
+]
