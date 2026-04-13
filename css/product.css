@@ -1,0 +1,131 @@
+/* Seção de Categorias (4 Cards Superiores) */
+.categories-section {
+    padding: 20px 0;
+}
+
+.grid-4-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    height: 400px;
+    border-radius: var(--border-radius);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.category-card:hover {
+    transform: scale(1.02);
+}
+
+.category-label {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* --- GRID COMPLEXO (Masonry do Layout) --- */
+
+.complex-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Bloco de Cima: Homem + 3 Sapatos */
+.grid-block-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-lifestyle-large {
+    height: 500px;
+    border-radius: var(--border-radius);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.lifestyle-content h3 { font-size: 32px; margin-bottom: 10px; }
+.lifestyle-btns { display: flex; gap: 10px; margin-top: 20px; }
+.btn-sm { 
+    background: transparent; border: 1px solid white; color: white;
+    padding: 8px 20px; border-radius: 20px; cursor: pointer;
+}
+
+.grid-shoe-column {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 20px;
+}
+
+.grid-shoe-row-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Bloco de Baixo: Wide Shoe + Mulher + 2 Pequenos */
+.grid-block-bottom {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.8fr;
+    gap: 20px;
+}
+
+.card-lifestyle-tall {
+    height: 450px;
+    border-radius: var(--border-radius);
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-shoe-column-small {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Estilos de Card de Produto genéricos para o Grid */
+.card-shoe-medium, .card-shoe-small, .card-shoe-wide {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.card-shoe-wide { height: 450px; }
+.card-shoe-medium { height: auto; min-height: 250px; }
+.card-shoe-small { height: auto; min-height: 215px; }
+
+.product-image-grid {
+    width: 80%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-name-grid { font-size: 14px; font-weight: 600; }
+.product-price-grid { font-size: 14px; font-weight: 700; opacity: 0.8; }
