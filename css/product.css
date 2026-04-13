@@ -1,15 +1,15 @@
-/* Seção de Categorias (4 Cards Superiores) */
-.categories-section {
+/* Seção de Categorias */
+.categories {
     padding: 20px 0;
 }
 
-.grid-4-columns {
+.categories__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.category-card {
+.category {
     height: 400px;
     border-radius: var(--border-radius);
     background-size: cover;
@@ -23,37 +23,47 @@
     transition: var(--transition);
 }
 
-.category-card:hover {
+.category:hover {
     transform: scale(1.02);
 }
 
-.category-label {
+.category__label {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px 40px;
     border-radius: 30px;
     font-weight: 600;
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--text-color);
 }
 
-/* --- GRID COMPLEXO (Masonry do Layout) --- */
+/* --- GRID COMPLEXO DE PRODUTOS --- */
 
-.complex-grid {
+.products {
+    padding: 40px 0;
+}
+
+.products__grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 0;
 }
 
-/* Bloco de Cima: Homem + 3 Sapatos */
-.grid-block-top {
+.products__block {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.card-lifestyle-large {
-    height: 500px;
+.products__block--top {
+    grid-template-columns: 1fr 1fr;
+}
+
+.products__block--bottom {
+    grid-template-columns: 1.5fr 1fr 0.8fr;
+}
+
+/* Cartões de Lifestyle */
+.lifestyle-card {
     border-radius: var(--border-radius);
     background-size: cover;
     background-position: center;
@@ -64,47 +74,31 @@
     color: white;
 }
 
-.lifestyle-content h3 { font-size: 32px; margin-bottom: 10px; }
-.lifestyle-btns { display: flex; gap: 10px; margin-top: 20px; }
-.btn-sm { 
-    background: transparent; border: 1px solid white; color: white;
-    padding: 8px 20px; border-radius: 20px; cursor: pointer;
-}
+.lifestyle-card--large { height: 500px; }
+.lifestyle-card--tall { height: 450px; }
 
-.grid-shoe-column {
+.lifestyle-card__content h3 { font-size: 32px; margin-bottom: 10px; }
+.lifestyle-card__actions { display: flex; gap: 10px; margin-top: 20px; }
+
+/* Organização de Colunas e Linhas */
+.products__column {
     display: grid;
     grid-template-rows: 1.5fr 1fr;
     gap: 20px;
 }
 
-.grid-shoe-row-small {
+.products__column--small {
+    grid-template-rows: 1fr 1fr;
+}
+
+.products__row--small {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* Bloco de Baixo: Wide Shoe + Mulher + 2 Pequenos */
-.grid-block-bottom {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 0.8fr;
-    gap: 20px;
-}
-
-.card-lifestyle-tall {
-    height: 450px;
-    border-radius: var(--border-radius);
-    background-size: cover;
-    background-position: center;
-}
-
-.grid-shoe-column-small {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-}
-
-/* Estilos de Card de Produto genéricos para o Grid */
-.card-shoe-medium, .card-shoe-small, .card-shoe-wide {
+/* Bloco do Item de Sapato (Bloco BEM independente) */
+.shoe-item {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
     padding: 20px;
@@ -116,16 +110,17 @@
     transition: var(--transition);
 }
 
-.card-shoe-wide { height: 450px; }
-.card-shoe-medium { height: auto; min-height: 250px; }
-.card-shoe-small { height: auto; min-height: 215px; }
+.shoe-item--wide { height: 450px; }
+.shoe-item--medium { height: auto; min-height: 250px; }
+.shoe-item--small { height: auto; min-height: 215px; }
 
-.product-image-grid {
+/* Estilos internos do shoe-item (usados via JS) */
+.shoe-item__image {
     width: 80%;
     max-height: 150px;
     object-fit: contain;
     margin-bottom: 10px;
 }
 
-.product-name-grid { font-size: 14px; font-weight: 600; }
-.product-price-grid { font-size: 14px; font-weight: 700; opacity: 0.8; }
+.shoe-item__name { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
+.shoe-item__price { font-size: 14px; font-weight: 700; opacity: 0.8; }
