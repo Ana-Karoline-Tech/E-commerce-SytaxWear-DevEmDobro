@@ -1,0 +1,94 @@
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+}
+
+/* Mapeamento das Áreas do Grid baseado nas classes */
+.highlight {
+  grid-area: highlight;
+  background-image: url("../../assets/images/img/card_grid_bottom703x503.jpg");
+  background-position: center;
+}
+
+.sneaker-purple {
+  grid-area: sneaker-purple;
+  background-image: url("../../assets/images/tenis-individual/roxo-verde-grid.jpg");
+}
+
+.model {
+  grid-area: model;
+  background-image: url("../../assets/images/tenis-individual/modelo-feminino.jpg");
+}
+
+.sneaker-color {
+  grid-area: sneaker-color;
+  background-image: url("../../assets/images/tenis-individual/futurista-grid.jpg");
+}
+
+.sneaker-white {
+  grid-area: sneaker-white;
+  background-image: url("../../assets/images/tenis-individual/preto-azul-grid.jpg");
+}
+
+.sneaker-silver {
+  grid-area: sneaker-silver;
+  background-image: url("../../assets/images/tenis-individual/moder-grid.jpg");
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas:
+    "highlight highlight sneaker-purple sneaker-purple"
+    "highlight highlight model sneaker-color"
+    "sneaker-white sneaker-white model sneaker-silver";
+  gap: 30px;
+}
+
+.top1-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  color: #ededed;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: var(--transition);
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #6226D9;
+  border-color: #6226D9;
+  color: var(--text-color);
+}
+
+.cta-group {
+  display: flex;
+  gap: 10px;
+}
