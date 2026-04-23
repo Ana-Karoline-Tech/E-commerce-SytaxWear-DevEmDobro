@@ -24,9 +24,11 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img {
@@ -49,13 +51,4 @@ ul {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-}
-
-/* O container é quem manda na margem lateral */
-.container {
-    width: 100%;
-    max-width: 1360px; /* Ajuste para dar o tamanho da margem */
-    margin: 0 auto;
-    padding: 0 40px; /* Essa é a sua "borda" lateral */
-    box-sizing: border-box;
 }
