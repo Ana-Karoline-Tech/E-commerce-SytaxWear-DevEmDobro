@@ -2,7 +2,7 @@
   background-color: white;
   padding: 12px 24px;
   position: fixed;
-  top: 40px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
@@ -10,7 +10,7 @@
   justify-content: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
-  width: calc(100% - 80px);
+  width: calc(100% - 210px);
   max-width: 1300px;
 }
 
