@@ -34,13 +34,8 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.24) 0%,
-    rgba(0, 0, 0, 0.5) 45%,
-    rgba(0, 0, 0, 0.75) 100%
-  );
   z-index: 2;
+  padding: 40px 40px 40px;
 }
 
 .hero__content {
