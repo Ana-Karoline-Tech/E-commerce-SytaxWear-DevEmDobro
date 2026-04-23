@@ -1,19 +1,18 @@
 .hero {
-  padding: 0 0 80px;
-  margin-top: -26px;
+  padding: 20px 0 80px;
   position: relative;
 }
 
 .hero__card {
   position: relative;
   height: 620px;
-  border-radius: 28px;
+  border-radius: 32px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 0 60px;
+  justify-content: flex-end;
+  padding: 0 80px;
   color: white;
-  background: #000;
 }
 
 .hero__image {
@@ -30,10 +29,9 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.24) 0%,
-    rgba(0, 0, 0, 0.5) 45%,
-    rgba(0, 0, 0, 0.75) 100%
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 100%
   );
   z-index: 2;
 }
@@ -41,66 +39,42 @@
 .hero__content {
   position: relative;
   z-index: 3;
-  max-width: 540px;
-  margin-left: auto;
+  max-width: 480px;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .hero__eyebrow {
-  display: inline-block;
-  margin-bottom: 16px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .hero__content h2 {
-  font-size: 52px;
-  line-height: 1.05;
-  margin-bottom: 20px;
-  max-width: 520px;
-}
-
-.hero__content p {
-  font-size: 18px;
-  margin-bottom: 40px;
-  max-width: 520px;
-}
-
-.hero__actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 18px;
-}
-
-.hero__content h2 {
-  font-size: 48px;
+  font-size: 42px;
+  line-height: 1.2;
   font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.hero__content p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  max-width: 400px;
+  margin-bottom: 32px;
 }
 
 .hero__actions {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 
 /* Bloco Global de Botão */
 .button {
-  padding: 12px 30px;
-  border-radius: 30px;
+  padding: 14px 40px;
+  border-radius: 40px;
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
   border: none;
-  font-size: 15px;
+  font-size: 16px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -108,25 +82,18 @@
 
 .button--primary {
   background-color: white;
-  color: black;
+  color: #6226d9; /* Cor baseada no logo se necessário, ou preto como no design */
+  color: #1a1a1a;
 }
 
 .button--secondary {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
   color: white;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.button--small {
-  padding: 8px 20px;
-  font-size: 14px;
-  background: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1.5px solid white;
 }
 
 .button:hover {
   transform: translateY(-2px);
   opacity: 0.9;
 }
+
