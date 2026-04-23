@@ -1,27 +1,29 @@
 .header {
-  background-color: rgba(255, 255, 255, 0.96);
-  padding: 16px 0;
-  position: sticky;
-  top: 24px;
-  z-index: 30;
-  backdrop-filter: blur(16px);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
-  border-radius: 24px;
-  margin: 0 auto;
-  width: min(calc(100% - 40px), 1180px);
+  background-color: white;
+  padding: 12px 24px;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  width: calc(100% - 80px);
+  max-width: 1300px;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 18px;
+  width: 100%;
+  padding: 0 10px;
 }
 
-.header__logo h1 {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -1px;
+.logo img {
+  height: 32px;
 }
 
 .navbar {
@@ -32,40 +34,39 @@
 
 .navbar__menu {
   display: flex;
-  gap: 28px;
+  gap: 32px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar__link {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0%;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
   transition: var(--transition);
   text-decoration: none;
-  color: inherit;
+  color: #1a1a1a;
 }
 
 .navbar__link:hover {
-  opacity: 0.7;
+  color: #6226d9;
 }
 
 .header__nav-right {
   display: flex;
-  gap: 12px;
+  gap: 24px;
   align-items: center;
-  margin-right: 6px;
+  margin-right: 24px;
 }
 
 .header__nav-right .navbar__link {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
 }
 
 .header__icons {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   align-items: center;
 }
 
@@ -74,29 +75,31 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  font-size: 18px;
-  transition:
-    background-color 0.2s ease,
-    transform 0.2s ease;
+  transition: transform 0.2s ease;
   text-decoration: none;
-  color: inherit;
-  border-radius: 50%;
+  color: #1a1a1a;
+}
+
+.header__icon-link img,
+.header__cart-link img {
+  height: 20px;
 }
 
 .header__icon-link:hover,
 .header__cart-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .header__cart-count {
-  font-size: 12px;
-  background-color: var(--accent-color);
+  font-size: 10px;
+  background-color: #6226d9;
   color: white;
-  padding: 2px 6px;
-  border-radius: 10px;
-  vertical-align: top;
-  margin-left: -5px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
 }
