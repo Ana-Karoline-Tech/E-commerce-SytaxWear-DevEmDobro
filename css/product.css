@@ -124,3 +124,18 @@
 
 .shoe-item__name { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
 .shoe-item__price { font-size: 14px; font-weight: 700; opacity: 0.8; }
+
+@media (max-width: 768px) {
+    .categories {
+        padding: 20px;
+    }
+
+    .categories__grid {
+        grid-template-columns: 1fr; /* Força uma única coluna */
+        gap: 20px;
+    }
+
+    .category {
+        height: 350px; /* Altura ajustada para não ficar gigante no mobile */
+    }
+}
