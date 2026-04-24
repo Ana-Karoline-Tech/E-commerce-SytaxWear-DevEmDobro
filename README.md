@@ -11,7 +11,6 @@ SyntaxWear é uma plataforma de e-commerce moderna e responsiva dedicada à vend
 Aqui você pode ver o projeto em ação:
 
 ![Demonstração SyntaxWear](./assets/gif/giphy-syntaXwear001.gif)
-*(Substitua o arquivo assets/demo.gif pelo seu GIF gravado)*
 
 ---
 
