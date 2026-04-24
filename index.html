@@ -38,46 +38,59 @@
           </h1>
         </div>
 
-        <nav class="navbar">
-          <ul class="navbar__menu">
-            <li><a href="#" class="navbar__link">Masculino</a></li>
-            <li><a href="#products" class="navbar__link">Feminino</a></li>
-            <li><a href="#" class="navbar__link">Outlet</a></li>
-          </ul>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <img src="./assets/icons/social/menu-icon.png" alt="Menu Mobile" />
+        </label>
+
+        <nav class="nav-container">
+          <nav class="navbar">
+            <ul class="navbar__menu">
+              <li><a href="#" class="navbar__link">Masculino</a></li>
+              <li><a href="#products" class="navbar__link">Feminino</a></li>
+              <li><a href="#" class="navbar__link">Outlet</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__nav-right">
+            <a href="#" class="navbar__link">Nossas lojas</a>
+            <a href="#" class="navbar__link">Sobre</a>
+          </div>
+
+          <div class="header__icons">
+            <a
+              href="#"
+              class="header__icon-link"
+              aria-label="Minha conta"
+              title="Minha conta"
+            >
+              <img src="./assets/images/logo/item-menu.svg" alt="Minha conta" />
+            </a>
+            <a
+              href="#"
+              class="header__icon-link"
+              aria-label="Question"
+              title="Question"
+            >
+              <img
+                src="./assets/images/logo/ícone-question.svg"
+                alt="Question"
+              />
+            </a>
+            <a
+              href="#"
+              class="header__cart-link"
+              aria-label="Carrinho"
+              title="Carrinho"
+            >
+              <img
+                src="./assets/images/logo/ícone -compras.svg"
+                alt="Carrinho"
+              />
+              <span class="header__cart-count">0</span>
+            </a>
+          </div>
         </nav>
-
-        <div class="header__nav-right">
-          <a href="#" class="navbar__link">Nossas lojas</a>
-          <a href="#" class="navbar__link">Sobre</a>
-        </div>
-
-        <div class="header__icons">
-          <a
-            href="#"
-            class="header__icon-link"
-            aria-label="Minha conta"
-            title="Minha conta"
-          >
-            <img src="./assets/images/logo/item-menu.svg" alt="Minha conta" />
-          </a>
-          <a
-            href="#"
-            class="header__icon-link"
-            aria-label="Question"
-            title="Question"
-          >
-            <img src="./assets/images/logo/ícone-question.svg" alt="Question" />
-          </a>
-          <a
-            href="#"
-            class="header__cart-link"
-            aria-label="Carrinho"
-            title="Carrinho"
-          >
-            <img src="./assets/images/logo/ícone -compras.svg" alt="Carrinho" />
-            <span class="header__cart-count">0</span>
-          </a>
-        </div>
       </div>
     </header>
 
@@ -110,30 +123,25 @@
             style="
               background-image: url(&quot;./assets/images/tenis-individual/tenis-casual.png&quot;);
             "
-          >
-            
-          </div>
+          ></div>
           <div
             class="category"
             style="
               background-image: url(&quot;./assets/images/tenis-individual/tenis-esporte.png&quot;);
             "
-          >
-          </div>
+          ></div>
           <div
             class="category"
             style="
               background-image: url(&quot;./assets/images/tenis-individual/tenis-moderno.png&quot;);
             "
-          >
-          </div>
+          ></div>
           <div
             class="category"
             style="
               background-image: url(&quot;./assets/images/tenis-individual/tenis-futurista.png&quot;);
             "
-          >
-          </div>
+          ></div>
         </div>
       </section>
 
@@ -155,7 +163,6 @@
         <div class="card sneaker-white"></div>
         <div class="card sneaker-silver"></div>
       </section>
-
     </main>
 
     <!-- Footer -->
@@ -170,11 +177,18 @@
               <button>→</button>
             </div>
             <div class="footer__social">
-              <a href="#" class="footer__social-link"><img src="assets/icons/social/instagram-icon.png" alt=""></a>
-              <a href="#" class="footer__social-link"><img src="assets/icons/social/whatsapp-icon.png" alt=""></a>
-              <a href="#" class="footer__social-link"><img src="assets/icons/social/tiktok-icon.png" alt=""></a>
-              <a href="#" class="footer__social-link"><img src="assets/icons/social/facebook-icon.png" alt=""></a>
-              
+              <a href="#" class="footer__social-link"
+                ><img src="assets/icons/social/instagram-icon.png" alt=""
+              /></a>
+              <a href="#" class="footer__social-link"
+                ><img src="assets/icons/social/whatsapp-icon.png" alt=""
+              /></a>
+              <a href="#" class="footer__social-link"
+                ><img src="assets/icons/social/tiktok-icon.png" alt=""
+              /></a>
+              <a href="#" class="footer__social-link"
+                ><img src="assets/icons/social/facebook-icon.png" alt=""
+              /></a>
             </div>
           </div>
           <div class="footer__links">
