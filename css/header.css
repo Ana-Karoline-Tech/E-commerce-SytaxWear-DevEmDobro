@@ -133,7 +133,7 @@
 }
 
 @media (max-width: 1280px) {
-  .header{
+  .header {
     width: calc(100% - 40px);
   }
   
@@ -147,12 +147,12 @@
     top: 0;
     right: -100%;
     width: 280px;
-    height: auto;
+    height: auto; 
     flex-direction: column;
-    justify-content: flex-start; /* Alinha tudo no topo */
+    justify-content: flex-start;
     padding: 100px 30px 30px;
     background-color: white;
-    gap: 0; /* Remove o gap para controlar apenas via padding */
+    gap: 0;
     transition: right 0.3s ease;
     align-items: flex-start;
     box-shadow: -10px 0 20px rgba(0,0,0,0.1);
@@ -166,7 +166,7 @@
   .navbar {
     flex: none; 
     width: 100%;
-    display: block; /* Muda de flex para block no mobile */
+    display: block;
   }
 
   .navbar__menu, .header__nav-right {
@@ -174,21 +174,28 @@
     gap: 0;
     width: 100%;
     align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar__menu li {
+    width: 100%;
   }
 
   .navbar__link {
      display: block;
      width: 100%;
      border-bottom: 1px solid #f5f5f5;
-     padding: 15px 0; /* Aumentei um pouco o toque */
+     padding: 15px 0;
      font-size: 16px;
+     text-align: left;
   }
 
   .header__nav-right {
     margin-right: 0;
     margin-top: 0;
     width: 100%;
-    display: flex; /* Garante que os links dentro fiquem em coluna via .header__nav-right rules acima */
+    display: flex;
   }
 
   .header__icons {
@@ -197,5 +204,6 @@
     width: 100%;
     justify-content: flex-start;
     gap: 25px;
+    border-top: 1px solid #eee;
   }
 }
